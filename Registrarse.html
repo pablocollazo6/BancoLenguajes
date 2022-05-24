@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="bancologo3.png" type="image/png">
+    <title>American Bank</title>
+    <link rel="stylesheet" href="./Registrarse.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo">
+                <a href="./index.html"><img src="bancologo3.png" alt="logo"></a>
+            </div>
+        </header>
+        <div id="contenido">
+            <aside id="lateral">
+
+            </aside>
+            <div id="publicaciones">
+                <div class="post">
+                    <div class="main">
+                        <div id="registro">
+                            <form class="formulario" action="Registrarse.php" method="post">
+                                <label for="correo">Nombre:</label>
+                                <input type="text" name="nombre" autocomplete="off" required>
+                                <label>Apellidos:</label>
+                                <input type="text" name="apellidos" autocomplete="off" required>
+                                <label for="correo">DNI:</label>
+                                <input type="text" name="dni" autocomplete="off" required>
+                                <label for="telefono">Telefono:</label>
+                                <input type="tel" id="phone" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999 999 999" size="9" required>
+                                <label for="correo">Correo:</label>
+                                <input type="email" name="correo" autocomplete="off" required>
+                                <label for="contrasena">Contraseña:</label>
+                                <input type="password" name="contrasena" autocomplete="off" required>
+                                <input id="enviar" type="submit" name="registro" value="Registrarse" action="Registrarse.php">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div id="copyright">
+                <p>&copy 2022 American Bank. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+</html>

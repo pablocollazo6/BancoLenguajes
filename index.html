@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="bancologo3.png" type="image/png">
+    <title>American Bank</title>
+    <link rel="stylesheet" href="./PaginaPrincipal.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo">
+                <a href="./index.html"><img src="bancologo3.png" alt="logo"></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li></li>
+                    <li><a href="./Registrarse.html">Registrarse</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <div id="contenido">
+            <aside id="lateral">
+                <div id="registro">
+                    <p id="novedades">Inicia sesión</p>
+                    <form class="formulario" action="login.php" method="post">
+                        <label for="correo">DNI:</label>
+                        <input type="dni" name="dni" autocomplete="off" required>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" name="contrasena" autocomplete="off" required>
+                        <input id="enviar" type="submit" name="registro" value="Iniciar Sesión">
+                    </form>
+                </div>
+                <div id="redes">
+                    <p id="siguenos">También puedes enterarte de otras novedades en:</p>
+                    <div id="iconos">
+                        <a class="youtube" href="https://www.youtube.com">y</a>
+                        <a class="twitter" href="https://twitter.com">t</a>
+                        <a class="facebook" href="https://www.facebook.com/">f</a>
+                    </div>
+                </div>
+            </aside>
+            <div id="publicaciones">
+                <div class="post">
+                    <div class="main">
+                        <marquee scrollamount=3 scrolldelay=500 behavior="alternate">
+                            <img weight=310 height=310 src=publi.jpg>
+                            <img weight=310 height=310 src=publi2.png>
+                            <img weight=310 height=310 src=publi3v2.jpg>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div id="copyright">
+                <p>&copy 2022 American Bank. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        alert("American Bank utiliza cookies para mejorar tu experiencia. Si continuas utilizando nuestra web, aceptas que utilicemos nuestras cookies")
+    </script>
+</body>
+
+
+</html>

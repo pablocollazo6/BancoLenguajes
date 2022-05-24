@@ -1,0 +1,279 @@
+@font-face {
+    font-family: Bebas;
+    src: url(./BebasNeue-Regular.otf)
+}
+
+@font-face {
+    font-family: Websymbols;
+    src: url(./WEBSYMBOLS-REGULAR.OTF);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    background: #A9C2C4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 99%;
+    height: 80px;
+    padding: 2px;
+    background: #A9C2C4;
+}
+
+#logo {
+    flex-basis: 65%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#logo img {
+    width: 20%;
+    transition: 0.2s;
+}
+
+#logo img:hover {
+    width: 22%;
+}
+
+#menu {
+    flex-basis: 10%;
+    height: 40%;
+    align-items: right;
+    margin-left: 200px;
+    background-color: #003745;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#menu ul {
+    margin-top: 2px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+}
+
+#menu ul li a {
+    color: white;
+    font-size: 25px;
+    font-family: Bebas;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu ul li a:hover {
+    color: #728586;
+    text-shadow: 0px 0px 15px black;
+}
+
+#contenido {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#lateral {
+    display: flex;
+    flex-basis: 15%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: -20px;
+    background: #003745;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    max-height: 1000px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Bebas;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.formulario label {
+    margin-top: 5px;
+}
+
+.formulario input {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #728586;
+    padding: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#enviar {
+    margin-top: 15px;
+    border: none;
+    border-radius: 13px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Bebas;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#novedades {
+    text-align: center;
+    font-family: Bebas;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#enviar:hover {
+    background: #728586;
+    border: 1px hidden black;
+    box-shadow: 0px 0px 7px #728586;
+}
+
+.formulario input:focus {
+    background: #dfe6e9;
+    border: 1px solid black;
+    box-shadow: 0px 0px 25px black;
+}
+
+#publicaciones {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-left: 52px;
+    margin-top: -20px;
+}
+
+.post h2 {
+    font-family: Bebas;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.post p {
+    font-family: sans-serif;
+}
+
+.post {
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: #003745;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.post:last-child {
+    margin-bottom: 82px;
+}
+
+.post:hover {
+    transform: scale(1.01, 1.01);
+}
+
+#siguenos {
+    font-family: Bebas;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+#iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.youtube {
+    font-family: Websymbols;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.twitter {
+    font-family: Websymbols;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.facebook {
+    font-family: Websymbols;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.youtube:hover {
+    color: #e84118;
+    text-shadow: 0px 0px 15px #e84118;
+}
+
+.twitter:hover {
+    color: #00a8ff;
+    text-shadow: 0px 0px 15px #00a8ff;
+}
+
+.facebook:hover {
+    color: #3b5998;
+    text-shadow: 0px 0px 15px #3b5998;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    height: 30px;
+}
+
+#footer p {
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
